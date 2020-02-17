@@ -1,0 +1,17 @@
+Cordell Blanchard, 11236660, chb344, 04, L06
+Question 1
+copy1()
+- does not make a copy
+- is suitable (returns a sorted list, only requires one input)
+copy2()
+- makes a copy
+- is suitable
+copy3()
+- does not make a copy
+- is not suitable (requires a list with contents as a parameter)
+copy4()
+- makes a copy 
+- is not suitable (requires an empty list as a parameter)
+copy5()
+- makes a copy
+- is suitable

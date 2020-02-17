@@ -1,0 +1,192 @@
+# File: a4q1_design.txt
+# Author: Cordell Blanchard
+
+
+######################################################################
+# NxN Latin Square Checker 
+# Design Document
+# Cordell Blanchard
+# chb344, 11236660
+# 04, L06
+#
+# Application's Purpose:
+#   To check if a file contains a NxN Latin Square or not
+#  	  
+#   ** Note: this program does not try to create a NxN Latin square!
+#
+# Latin Square Definition: 
+#   - NxN grid  
+#   - contains integers 1 through N exactly once in each column and row, in any order
+#
+#   E.g.  3x3 Latin   4x4 not Latin
+#          1 3 2        1 2 3 4
+#          3 2 1        2 1 4 3
+#          2 1 3        3 3 1 2
+#			4 3 2 1
+# 
+# High level behaviour (main)
+#   Asks for and obtain name of text file using input()
+#   text file must contain:
+#   - a postive integer N on a line by itself which is the order of a latin square
+#   - reads N lines with N numbers seperated by spaces (reads a console input for a square)
+#   - In the case of this assignment it can be assumed the file exists and is in correct format.
+#   Check whether the sequence of numbers is a Latin square or not!
+#   Program should display "YES" on console if the NxN square in the 
+#   the file is Latin, "NO" otherwise
+######################################################################
+
+
+######################################################################
+#     Algorithms in Bottom-to-Top Order
+######################################################################
+
+
+######################################################################
+# Algorithm 2.3: read_file(filename)
+#   Purpose: 
+#	To convert the text file into useful information to check the NxN square
+#   Pre Conditions:
+#   	filename: a string containing name of file to be read
+#   PostConditions: None
+#   Return: 
+#	N: A positive integer containing The order of the square N, 
+#	square: a NxN list of integers containing values specified in file
+#
+#  1. assign variable to opened file (in read mode)
+#  2. assign N to the first line of file converted to an int
+#  3. Iterate through rest of lines in file and convert each number to an integer
+#     and input them into square accordingly
+#  4. Return N and square
+#
+# Test cases for Algorithm 2.3 (using examples given to us)
+# 1.  Inputs: no_3.3.txt
+#     Output: N as 3, and square as [[2, 3, 1], [3, 1, 1], [1, 2, 3]]
+#     Reason: The values according to their respectful values in the file are correct
+# 2.  Inputs: yes_5.1.txt
+#     Output: N as 5, 
+#	and square:
+#	[[3, 4, 1, 5, 2], 
+#	[2, 5, 4, 3, 1], 
+#	[1, 3, 2, 4, 5], 
+#	[4, 2, 5, 1, 3], 
+#	[5, 1, 3, 2, 4]] 
+#     Reason: The values according to their respectful values in the file are correct
+
+
+
+######################################################################
+# Algorithm 2.2: check_columns(square, N)
+#   Purpose: 
+#	To check if every column in square is correct for a Latin square
+#   Pre Conditions:
+#   	square: NxN list of integers
+#	N: Positive integer representing order of square
+#   PostConditions: None
+#   Return: 
+#	True if all columns in square contain 1 through N exactly once, False otherwise
+#
+#  1. Create a list called seen containg N boolean values, intialize every value to False
+#  2. Initialize variable count to 0
+#  3. Iterate through each column and for every value in the column, check if seen[value-1] is
+#     already true, if so add N+1 to count and go to next itteration, else set seen[value-1] = True
+#     (make sure to account for values out of range)
+#  4. At the end of each column iteration check if all values in seen are True if so add 1 to count
+#  5. Re-intialize every value in the seen list to False at the beginning of each column itteration
+#  6. Return True if count == N, False otherwise
+#
+# Test cases for Algorithm 2.2
+# 1.  Inputs: [[1, 3, 2, 4], [2, 2, 1, 2], [3, 1, 3, 1], [4, 4, 4, 3]]
+#     Output: True
+#     Reason: All columns contain 1 through 4
+# 2.  Inputs: [[1, 3, 2], [2, 4, 3], [3, 5, 1]]
+#     Output: False
+#     Reason: Second column does not contain all values 1 through 3
+# 3.  Inputs: [[1, 1, 1], [1, 2, 2], [3, 3, 3]]
+#     Output: False
+#     Reason: First column does not contain values 1 through 3 exactly once
+# 4.  Inputs: [[1, 2, 3], [1, 2, -10], [1, 2, 3]]
+#     Output: False
+#     Reason: Third column does not contain values 1 through 3 exactly once
+
+
+
+######################################################################
+# Algorithm 2.1: check_rows(square, N)
+#   Purpose: 
+#	To check if every row in square is correct for a Latin square
+#   Pre Conditions:
+#   	square: NxN list of integers
+#	N: Positive integer representing order of square
+#   PostConditions: None
+#   Return: 
+#	True if all rows in square contain 1 through N exactly once, False otherwise
+#
+#  1. Create a list called seen containg N boolean values, intialize every value to False
+#  2. Initialize variable count to 0
+#  3. Iterate through each row and for every value in the row, check if seen[value-1] is
+#     already true, if so add N+1 to count and go to next itteration, else set seen[value-1] = True
+#     (make sure to account for values out of range)
+#  4. At the end of each row iteration check if all values in seen are True if so add 1 to count
+#  5. Re-intialize every value in the seen list to False at the beginning of each row itteration
+#  6. Return True if count == N, False otherwise
+#
+# Test cases for Algorithm 2.1
+# 1.  Inputs: [[1, 3, 2, 4], [3, 2, 1, 4], [1, 2, 3, 4], [4, 3, 2, 1]]
+#     Output: True
+#     Reason: All rows contain 1 through 4
+# 2.  Inputs: [[1, 1, 1], [1, 2, 3], [3, 2, 1]]
+#     Output: False
+#     Reason: First row doesnt contain all values 1 through 3 exactly once
+# 3.  Inputs: [[1, 2, 3], [-10, 2, 2], [3, 2, 1]]
+#     Output: False
+#     Reason: Second row does not contain values 1 through 3 exactly once
+# 4.  Inputs: [[1, 2, 3], [2, 3, 1], [-10, 100, 3]]
+#     Output: False
+#     Reason: third row does not contain values 1 through 3 exactly once
+
+
+######################################################################
+# Algorithm 2: check_square(square, N)
+#   Purpose: 
+#	To check if NxN square is Latin
+#   Pre Conditions:
+#   	square: NxN list of integers
+#	N: Positive integer representing order of square
+#   PostConditions: None
+#   Return: 
+#	True if square is Latin, False otherwise
+#
+#   1. Check if each column of the square has all integers 1 ... N exactly once
+#      call function check_columns()
+#   2. Check if each row of the square has all integers 1 ... N exactly once
+#      call function check_columns()
+#   3. If any of the checks above is False, return False else return True
+#
+# Test cases for Algorithm 2
+# 1.  Inputs: [[1, 3, 2], [3, 2, 1], [2, 1, 3]]
+#     Output: True
+#     Reason: Latin Square
+# 2.  Inputs: [[1, 2, 3], [1, 2, 3], [1, 2, 3]]
+#     Output: False
+#     Reason: Columns are not valid
+# 3.  Inputs: [[1, 1, 1], [2, 2, 2], [3, 3, 3]]
+#     Output: False
+#     Reason: Rows are not valid
+# 4.  Inputs: [[3, 4 , 1, 5, 2], [2, 5, 4, 3, 1], [1, 3, 2, 4, 5], [4, 2, 5, 1, 3], [5, 1, 3, 2, 4]]
+#     Output: True
+#     Reason: Bigger Latin square
+
+
+######################################################################
+# Algorithm 1: main()
+#   Inputs: nothing
+#   Return: 0
+#
+#   1. Ask for the file name using input()
+#   2. reads the file to gather N, and square by calling read_file()
+#   3. Checks if the square is latin by calling check_square()
+#   4. Diplays "YES" if it is a Latin Square, "NO" otherwise
+
+
+######################################################################
+#  End of Design Document

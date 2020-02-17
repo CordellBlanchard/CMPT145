@@ -1,0 +1,13 @@
+# CMPT 145: Assignment 4
+# Cordell Blanchard
+# chb344, 11236660
+# 04, L06
+
+1.) 
+It took me about 5 minutes to creat my plan
+2.)
+No parts of my design were significantly changed
+3.)
+No it was about the time I expected, I just didnt expect to be doing testing, debugging,
+and implementing at the same time so those parts took longer but I also did them at the
+same time which makes sense. But nothing really made me go longer then expected.

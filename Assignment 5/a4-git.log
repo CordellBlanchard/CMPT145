@@ -1,0 +1,69 @@
+CMPT 145 Assignment 5
+Cordell Blanchard
+11236660, chb344
+04 L06
+
+
+(base) C:\Users\Corde\PycharmProjects\CMPT145Assignment5>git --no-pager log
+commit a390700757174a73e405a405fa03d37968527eaf (HEAD -> master)
+Author: Cordell Blanchard <CordellBlanchard@gmail.com>
+Date:   Fri Feb 14 01:36:46 2020 -0600
+
+    All code for a5q3 finished and tested.
+
+commit 7b46f295c348e976c52b08da792b8feb1200653c
+Author: Cordell Blanchard <CordellBlanchard@gmail.com>
+Date:   Thu Feb 13 23:01:10 2020 -0600
+
+    code added for function contains_duplicates in a5q3.py
+
+commit 89856e2a65c5807121a5d9ae53deb1815af5819b
+Author: Cordell Blanchard <CordellBlanchard@gmail.com>
+Date:   Thu Feb 13 22:44:01 2020 -0600
+
+    code added for function count_chain in a5q3.py
+
+commit 1d463855fcc7f70fac5e35bd981510761398690a
+Author: Cordell Blanchard <CordellBlanchard@gmail.com>
+Date:   Thu Feb 13 21:51:09 2020 -0600
+
+    code added for functions size, enqueue, dequeue, and peek. All test cases passed. for FCQueue.py
+
+
+commit 9eea34da841ef2d5e9e8ea126ce0161b3971c399
+Author: Cordell Blanchard <CordellBlanchard@gmail.com>
+Date:   Thu Feb 13 17:46:55 2020 -0600
+
+    code added to function is_empty in FCQueue.py
+
+commit 131ac8af9d606a2e348031b22f9a3f4550a7db15
+Author: Cordell Blanchard <CordellBlanchard@gmail.com>
+Date:   Thu Feb 13 17:25:09 2020 -0600
+
+    Added code to function peek to RStack.py, all functions passed tests
+
+commit d2614a61a05730cec0cb4767f97032163360499a
+Author: Cordell Blanchard <CordellBlanchard@gmail.com>
+Date:   Thu Feb 13 17:10:52 2020 -0600
+
+    Added code to functions create, size, is_empty, enqueue, and dequeue to RStack.py All test passe
+d for these functions
+
+commit 6aa39b724130540e014761240e3ccc0514deed50
+Author: Cordell Blanchard <CordellBlanchard@gmail.com>
+Date:   Thu Feb 13 16:50:56 2020 -0600
+
+    Added code to function peek in RQueue.py. RQueue script for this version has passed all tests.
+
+commit 96ad277ce75661d8144e534a06b4779e945af01f
+Author: Cordell Blanchard <CordellBlanchard@gmail.com>
+Date:   Thu Feb 13 16:46:38 2020 -0600
+
+    Added code to functions for create, size, is_empty, enqueue, and dequeue into Rqueue.py all test
+s for these functions passed
+
+commit af067fd63eb4693faace0195bbe43007f0846bc1
+Author: Cordell Blanchard <CordellBlanchard@gmail.com>
+Date:   Thu Feb 13 15:53:32 2020 -0600
+
+    Initial commit for assignment 5

@@ -1,0 +1,16 @@
+Cordell Blanchard, chb344, 11236660, 04, L06
+Problem #1:
+Swap players was not swapping the letters because characters are immutable  
+Solution: must return the swapped player and assign player to the new returned value.
+Problem #2
+in random_filled was not assigning the players move to any spot in the columns
+solution: on line 43 instead of assigning col = col + [player] i changed it to
+board[col_choice] = col + [player]
+Problem #3
+in random_filled it was not assiging the '.' to the board
+solution: used append since that changes a current list instead of making a new one
+Problem #4
+gloabl variables for height that did not to be there.
+solution: deleted them
+
+

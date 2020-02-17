@@ -1,0 +1,22 @@
+# CMPT 145: Assignment 4
+# Cordell Blanchard
+# chb344, 11236660
+# 04, L06
+
+Welcome to Calculator! Input your expressions.
+> ( 1 + 3 )
+4.0
+> ( 5 - 7 )
+-2.0
+> ( 10 * 40 )
+400.0
+> ( 40 / 10 )
+4.0
+> ( ( 10 + 20 ) / 5 )
+6.0
+> ( ( 5 - 7 ) / ( 6 + 10 ) )
+-0.125
+> quit
+Thanks for using Calculator!
+
+Process finished with exit code 0

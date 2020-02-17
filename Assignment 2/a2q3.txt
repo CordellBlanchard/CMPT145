@@ -1,0 +1,5 @@
+Cordell Blanchard, chb344, 11236660, s04, L06
+loc = loc[s] description:
+this line makes the player enter the next room depending on the inputted direction s.
+This is done by assigning loc from the previous room to its dictionary value 
+for keys 'N', 'S', 'W', or 'E' which contains the next room in direction s

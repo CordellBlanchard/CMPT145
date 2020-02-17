@@ -1,0 +1,70 @@
+10
+5 7
+.....X.
+..X..O.
+.OX..O.
+.XXXOXO
+OXOOXXO
+
+5 7
+.......
+.......
+.....X.
+O.X..X.
+XOOXOOX
+
+5 7
+.......
+.......
+O......
+XX....X
+XOOO.XO
+
+5 7
+.X.O...
+.O.XX.X
+OO.OXOX
+OX.OXOX
+OXOXOXX
+
+5 7
+.......
+.......
+...X...
+..OX...
+XOOX..O
+
+5 7
+.......
+.......
+.......
+.......
+XXO.O.X
+
+5 7
+...O...
+.O.X.XO
+.O.XOXO
+.X.OOXX
+XOOXXXO
+
+5 7
+.......
+.......
+.XO.O..
+.OXXOX.
+.OOXXX.
+
+5 7
+.......
+.....O.
+..O..O.
+.XXXOX.
+OXXOXO.
+
+5 7
+.O...XX
+.O.O.OO
+.X.XXXO
+OO.OXXX
+OXXXOXO

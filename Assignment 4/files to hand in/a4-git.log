@@ -1,0 +1,119 @@
+# CMPT 145: Assignment 4
+# Cordell Blanchard
+# chb344, 11236660
+# 04, L06
+
+
+(base) C:\Users\Corde\PycharmProjects\Assignment4>git --no-pager log
+commit 65f68815178ee4529da014e83eb7113e46184a49 (HEAD -> master)
+Author: Cordell Blanchard <CordellBlanchard@gmail.com>
+Date:   Fri Feb 7 17:50:52 2020 -0600
+
+    Completed REPL for a4q4
+
+commit 5bbd01815e572f9b29b1fc705e7e0a8ee0ac7ee0
+Author: Cordell Blanchard <CordellBlanchard@gmail.com>
+Date:   Fri Feb 7 17:45:07 2020 -0600
+
+    Initial commit for a4q4.py only contains the intro message
+
+commit e370d09148fc190b900c056bab256288d1548a6f
+Author: Cordell Blanchard <CordellBlanchard@gmail.com>
+Date:   Fri Feb 7 17:34:30 2020 -0600
+
+    Completed and tested function for a4q3
+    a4q3_test script finished with valid test cases
+
+commit 5b5c0ccc4af8cc530ddbafb5c59376e8491ff0f1
+Author: Cordell Blanchard <CordellBlanchard@gmail.com>
+Date:   Fri Feb 7 15:43:43 2020 -0600
+
+    Initial commit for a4q3
+
+commit b1c27b50ee4ba8c4dff083471e5d8c4f94a615e9
+Author: Cordell Blanchard <CordellBlanchard@gmail.com>
+Date:   Fri Feb 7 15:38:23 2020 -0600
+
+    Tested and completed a4q1 program.
+    Test script completed with valid test cases.
+
+commit 6346b087ba031df8f84454fedfb25d7db6b406c5
+Author: Cordell Blanchard <CordellBlanchard@gmail.com>
+Date:   Thu Feb 6 11:52:49 2020 -0600
+
+    Created function stub for reverse()
+
+commit 7a61971675524c2ab1bbbba4005ecf9c8e50f9f2
+Author: Cordell Blanchard <CordellBlanchard@gmail.com>
+Date:   Thu Feb 6 11:07:13 2020 -0600
+
+    Initial commit for a4q2
+
+commit 64c04a44908bd79d3e941d8b8f762f9c470c8ae1
+Author: Cordell Blanchard <CordellBlanchard@gmail.com>
+Date:   Thu Feb 6 11:05:00 2020 -0600
+
+    forgot to close file added that to a4q1.
+
+commit 6ccf2c7072ac39052068cbf177dbeffb8f506600
+Author: Cordell Blanchard <CordellBlanchard@gmail.com>
+Date:   Wed Feb 5 23:45:16 2020 -0600
+
+    a4q1_testing
+    Test script with valid tests for all functions needed.
+    a4q1
+    all functions Tested and completed, main function added
+
+commit 1dd50c6921bbc31c454458b85a38643d9f914f7a
+Author: Cordell Blanchard <CordellBlanchard@gmail.com>
+Date:   Wed Feb 5 23:33:27 2020 -0600
+
+    a4q1_testing
+    Test script with valid tests for check_square() added.
+    a4q1
+    Tested and completed check_square() created
+
+commit 6961857a3a23a63fc0649573ac9e4a30d14848ec
+Author: Cordell Blanchard <CordellBlanchard@gmail.com>
+Date:   Wed Feb 5 23:20:08 2020 -0600
+
+    a4q1_testing
+    Test script with valid tests for check_rows() added.
+    a4q1
+    Tested and completed check_rows() created, and function stub for check_square() added
+
+commit 47d252489ba27ecc540cb441d5e9bc839a46d52b
+Author: Cordell Blanchard <CordellBlanchard@gmail.com>
+Date:   Wed Feb 5 23:08:07 2020 -0600
+
+    Tested and completed check_columns created, and function stub for check_rows() added.
+
+commit 4aea7bc0806956b723cb6b45cc4660cc0866a869
+Author: Cordell Blanchard <CordellBlanchard@gmail.com>
+Date:   Wed Feb 5 23:02:15 2020 -0600
+
+    Test script with valid tests for: read_file(), and check_columns().
+
+commit b28d82b59b827abd7ca0775c457cef3d02457eb1
+Author: Cordell Blanchard <CordellBlanchard@gmail.com>
+Date:   Wed Feb 5 22:35:51 2020 -0600
+
+    Tested and completed read_file() Created and function stub for check_columns() added.
+
+commit 273b959b87c594ec76589b1b3c8f1f8e54275c28
+Author: Cordell Blanchard <CordellBlanchard@gmail.com>
+Date:   Wed Feb 5 22:31:23 2020 -0600
+
+    Test script with valid tests for: read_file()
+
+commit 34b1b16cb73e79fcdf305ada26c7111e2d01102b
+Author: Cordell Blanchard <CordellBlanchard@gmail.com>
+Date:   Wed Feb 5 21:32:13 2020 -0600
+
+    Created function stub for read_file().
+
+commit 332788e308b296d3ce825f7787eb45b3c67b3266
+Author: Cordell Blanchard <CordellBlanchard@gmail.com>
+Date:   Wed Feb 5 19:28:53 2020 -0600
+
+    Initial commit for assignment 4.

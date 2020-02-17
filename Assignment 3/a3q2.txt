@@ -1,0 +1,37 @@
+Cordell Blanchard, chb344, 11236660, 04, L06
+
+problem #1: 
+on line 136 was concetenating a list with a string 
+solution: changed line[v] to [line[v]]
+
+problem #2:
+added new argument j to extract_4_from_row and extract_4_from_column to
+add robustness so that if you wanted to use function outside of main file you
+could choose any point in board you want to extract 4 from.
+Works fine in main file and test script.
+
+problem #3
+not all 'No decision' strings were consistent some had 'No decision ' and 'No  Decision'
+solution: made all strings with the sentence No decision = 'No decision'
+
+problem #4
+function check_4diags did not take an input square so it did not affect
+the square on line 101
+solution: added a parameter for square
+
+problem #5
+check_1x4 was using is as comparison instead of == which is incorrect because
+we want to compare values not references same thing occured in check_4diags.
+soltuion: changed all is to == in check_1x4
+
+problem #6
+diagdn was not correct in check_4diags was ouputting diagup in opposite direction
+solution: changed square[3-j][3-j] to square[3-j][j] on line 45
+
+problem #7
+on line 99 and 81 there was height-4 and width-4 but they must both be
+subtracted by 3 so the last row or diagonal doesnt get left out.
+
+problem #8
+added board to check_board as a parameter so that I could use it for test
+script works in main file without.

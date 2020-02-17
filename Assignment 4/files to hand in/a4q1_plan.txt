@@ -1,0 +1,23 @@
+# CMPT 145: Assignment 4
+# Cordell Blanchard
+# chb344, 11236660
+# 04, L06
+
+Phase			Day		Time	Location	Duration	Actual Time	Actual Duration
+Requirements	   	Feb 5, 2020	7:50pm	My home		10 minutes	7:45pm		4 minutes
+
+
+
+Design			Feb 5, 2020	8:00pm	My home		45 minutes	7:49pm		1 hour and 37 minutes
+
+
+
+Implentation		Feb 5, 2020	8:45pm	My home		80 minutes	9:26pm		2 hour and 20 min		
+
+
+
+Testing/debugging	Feb 5, 2020	10:05pm	My home		80 minutes	10:00pm		1 hour and 46 min
+
+
+
+Tidying up		Feb 5, 2020	11:25pm	My home		15 minutes	11:46pm		7 minutes

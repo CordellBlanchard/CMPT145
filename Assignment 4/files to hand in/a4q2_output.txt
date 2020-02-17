@@ -1,0 +1,62 @@
+# CMPT 145: Assignment 4
+# Cordell Blanchard
+# chb344, 11236660
+# 04, L06
+
+Test #1
+file inputted:
+January, February March April
+May June, July August. 
+September October, November December
+
+console output:
+December November October, September
+August. July June, May
+April March February January,
+
+Test #2 (for robustness):
+inputted a non string value
+
+console output:
+Error: file name input must be of the type string
+
+
+Test #3:
+file inputted:
+1 2 3 4 5 6
+7 8 9 10 11 12
+13 14 15 16 17
+18 19 20
+
+console output:
+20 19 18
+17 16 15 14 13
+12 11 10 9 8 7
+6 5 4 3 2 1
+
+Test #4:
+file inputted:
+so think I
+fun that isnt
+backwards displayed is
+message this Hello
+
+console output:
+Hello this message
+is displayed backwards
+isnt that fun
+I think so
+
+Test #5
+file inputted:
+test with weird. 'things?
+attatched4 to the words42
+but. who5 cares'
+
+console output:
+cares' who5 but.
+words42 the to attatched4
+'things? weird. with test
+
+
+
